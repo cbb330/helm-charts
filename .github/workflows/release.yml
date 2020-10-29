@@ -1,9 +1,8 @@
 name: Release Charts
 
 on:
-  push:
-    branches:
-      - master
+  repository_dispatch:
+    types: [event]
 
 jobs:
   release:
